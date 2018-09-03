@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\raghu\\eclipse-workspace\\BDDFramework\\src\\main\\java\\Features\\crmdeals.feature", //the path of the feature files
+		features = "C:\\Users\\raghu\\eclipse-workspace\\BDDFramework\\src\\main\\java\\Features\\dealsmap.feature", //the path of the feature files
 		glue={"stepDefinitions"},//the path of the step definition files
 		plugin = {"pretty","html:test-outout"},
 		monochrome = true,
