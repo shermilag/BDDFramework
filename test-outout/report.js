@@ -1,141 +1,113 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/raghu/eclipse-workspace/BDDFramework/src/main/java/Features/dealsmap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/raghu/eclipse-workspace/BDDFramework/src/main/java/Features/hooks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deal data creation",
+  "name": "Free CRM app test",
   "description": "",
-  "id": "deal-data-creation",
+  "id": "free-crm-app-test",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 434071,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Free crm create a new deal scenario",
+  "name": "free crm create deal test",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "id": "free-crm-app-test;free-crm-create-deal-test",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "enduser is on login page",
+  "line": 4,
+  "name": "user is on deal page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "user enters username and password",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 7
-    },
-    {
-      "cells": [
-        "shermilag",
-        "cutesharmi1"
-      ],
-      "line": 8
-    }
-  ],
-  "keyword": "Then "
+  "line": 5,
+  "name": "user fills the deals form",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "user clicks on login button",
+  "line": 6,
+  "name": "deal is created",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "HooksDefinition.user_is_on_deal_oage()"
+});
+formatter.result({
+  "duration": 172220791,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksDefinition.user_fills_the_deals_form()"
+});
+formatter.result({
+  "duration": 214038,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HooksDefinition.deal_is_created()"
+});
+formatter.result({
+  "duration": 193586,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 144926,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 324407,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "free crm create contact test",
+  "description": "",
+  "id": "free-crm-app-test;free-crm-create-contact-test",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 10,
-  "name": "user moves to new deal page",
-  "keyword": "Then "
+  "name": "user is on contact page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 11,
-  "name": "user enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commission"
-      ],
-      "line": 12
-    },
-    {
-      "cells": [
-        "test deal1",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 13
-    },
-    {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 14
-    },
-    {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 15
-    }
-  ],
-  "keyword": "Then "
+  "name": "user fills the contact form",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 16,
-  "name": "user will close the browser",
+  "line": 12,
+  "name": "contact is created",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepWithMapDefinition.enduser_is_on_login_page()"
+  "location": "HooksDefinition.user_is_on_contact_page()"
 });
 formatter.result({
-  "duration": 7797803621,
+  "duration": 194997,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepWithMapDefinition.user_enters_username_and_password(DataTable)"
+  "location": "HooksDefinition.user_fills_the_contact_form()"
 });
 formatter.result({
-  "duration": 326007840,
+  "duration": 177366,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_login_button()"
+  "location": "HooksDefinition.contact_is_created()"
 });
 formatter.result({
-  "duration": 790214,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.LoginStepDefinition.user_clicks_on_login_button(LoginStepDefinition.java:44)\r\n\tat ✽.Then user clicks on login button(C:/Users/raghu/eclipse-workspace/BDDFramework/src/main/java/Features/dealsmap.feature:9)\r\n",
-  "status": "failed"
+  "duration": 184418,
+  "status": "passed"
 });
-formatter.match({
-  "location": "DealStepWithMapDefinition.user_moves_to_new_deal_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealStepWithMapDefinition.user_enters_deal_details(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealStepWithMapDefinition.user_will_close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
+formatter.after({
+  "duration": 145983,
+  "status": "passed"
 });
 });
