@@ -12,6 +12,7 @@ import cucumber.api.junit.Cucumber;
 		monochrome = true,
 		strict = true,
 		dryRun = false
+	    //tags = {"~@SmokeTest" , "~@RegressionTest", "~@End2End"} //~ is used as disable
 			
 		)
 
